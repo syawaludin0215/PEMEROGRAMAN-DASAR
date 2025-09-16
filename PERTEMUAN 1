@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOfn1jEe04/n1ThwCLb/Duw",
+      "authorship_tag": "ABX9TyOHVOTkCnDYpE7z3nO3r8z1",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,25 +28,16 @@
     },
     {
       "cell_type": "code",
-      "source": [],
-      "metadata": {
-        "id": "bnrIyBGgDfAI"
-      },
-      "execution_count": null,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
       "source": [
-        "from typing_extensions import dataclass_transform\n",
         "# Biodata Saya\n",
-        "nama = \"Muhammad syawaludin syahid manalu\"\n",
+        "nama = \"muhammad syawaludin syahid manalu\"\n",
         "umur = 19\n",
-        "jurusan= \"RPE\"\n",
+        "jurusan = \"RPE\"\n",
         "semester = 3\n",
         "matakuliah = \"pemerograman dasar\"\n",
         "status_lulus = False\n",
-        "\n",
+        "hobi = \"sepak bola\"\n",
+        "tinggi_badan = 170\n",
         "\n",
         "print(nama)\n",
         "print(umur)\n",
@@ -54,32 +45,31 @@
         "print(semester)\n",
         "print(matakuliah)\n",
         "print(status_lulus)\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
-        "\n",
+        "print(hobi)\n",
+        "print(tinggi_badan)\n",
         "\n"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "UwRMkpGqBGTX",
-        "outputId": "a36fb732-6392-4154-b9b7-37f0aad88eb6"
+        "id": "Jv9O13viY_tr",
+        "outputId": "c7f85914-2196-4ea2-fd71-6b2e64a7bbd1"
       },
-      "execution_count": 14,
+      "execution_count": 13,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "Muhammad syawaludin syahid manalu\n",
+            "muhammad syawaludin syahid manalu\n",
             "19\n",
             "RPE\n",
             "3\n",
             "pemerograman dasar\n",
-            "False\n"
+            "False\n",
+            "sepak bola\n",
+            "170\n"
           ]
         }
       ]
