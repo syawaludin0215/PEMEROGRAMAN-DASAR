@@ -1,0 +1,203 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN5BBhG/ELTZAFbbzvfbdCS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/syawaludin0215/PEMEROGRAMAN-DASAR/blob/main/Pertemuan%202%20Tugas\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vMVXohzVo7jS",
+        "outputId": "9c0f3799-2656-4e25-dd8c-2a9ef1fe0205"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nama Depan: MUHAMMAD SYAWALUDIN\n",
+            "Nama Belakang: SYAHID MANALU\n",
+            "Umur: 20\n",
+            "Status Menikah: False\n"
+          ]
+        }
+      ],
+      "source": [
+        "# TODO: Variabel dasar\n",
+        "firstName = \"MUHAMMAD SYAWALUDIN\"      # string\n",
+        "lastName = \"SYAHID MANALU\"            # string\n",
+        "age = 20                  # integer\n",
+        "isMarried = False         # boolean\n",
+        "\n",
+        "print(\"Nama Depan:\", firstName)\n",
+        "print(\"Nama Belakang:\", lastName)\n",
+        "print(\"Umur:\", age)\n",
+        "print(\"Status Menikah:\", isMarried)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: Dictionary data diri\n",
+        "data_diri = {\n",
+        "    \"firstName\": \"MUHAMMAD SYAWALUDIN\",\n",
+        "    \"lastName\": \"SYAHID MANALU\",\n",
+        "    \"age\": 20,\n",
+        "    \"isMarried\": False\n",
+        "}\n",
+        "\n",
+        "print(data_diri)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QQlf__q4pdMM",
+        "outputId": "cabd8d39-6f86-41e2-a776-4fcabb62f4c9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'firstName': 'MUHAMMAD SYAWALUDIN', 'lastName': 'SYAHID MANALU', 'age': 20, 'isMarried': False}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: List inspeksi\n",
+        "inspeksi = [\n",
+        "    \"pemahaman terhadap rencana dan desain\",\n",
+        "    \"ketersediaan bahan dan peralatan\",\n",
+        "    \"pengawasan pekerjaan\",\n",
+        "    \"kualitas konstruksi\",\n",
+        "    \"keselamatan kerja\",\n",
+        "    \"koordinasi dengan pemilik proyek\"\n",
+        "]\n",
+        "\n",
+        "print(inspeksi)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NoB4GjhBpfij",
+        "outputId": "ec1cc51a-52a4-4ccb-c7c7-a1984a7c4cd0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['pemahaman terhadap rencana dan desain', 'ketersediaan bahan dan peralatan', 'pengawasan pekerjaan', 'kualitas konstruksi', 'keselamatan kerja', 'koordinasi dengan pemilik proyek']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: Dictionary waktu datang & pulang\n",
+        "startTime = {\n",
+        "    \"HH\": 9,\n",
+        "    \"mm\": 23,\n",
+        "    \"ss\": 57\n",
+        "}\n",
+        "\n",
+        "endTime = {\n",
+        "    \"HH\": 15,\n",
+        "    \"mm\": 25,\n",
+        "    \"ss\": 43\n",
+        "}\n",
+        "\n",
+        "print(\"Waktu Datang:\", startTime)\n",
+        "print(\"Waktu Pulang:\", endTime)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cbo8bgSFphHs",
+        "outputId": "8edd8251-1e0d-4095-d60c-7010c626c147"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Waktu Datang: {'HH': 9, 'mm': 23, 'ss': 57}\n",
+            "Waktu Pulang: {'HH': 15, 'mm': 25, 'ss': 43}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO: Studi kasus katalog produk\n",
+        "katalog_A = {\"Laptop\", \"Mouse\", \"Keyboard\", \"Monitor\"}\n",
+        "katalog_B = {\"Printer\", \"Mouse\", \"Scanner\", \"Keyboard\"}\n",
+        "produk_diskon = (\"Mouse\", \"Printer\")   # tuple\n",
+        "\n",
+        "# 1. Gabungkan katalog\n",
+        "katalog_lengkap = katalog_A.union(katalog_B)\n",
+        "\n",
+        "# 2. Cari produk diskon yang ada di katalog lengkap\n",
+        "produk_promo_aktif = katalog_lengkap.intersection(produk_diskon)\n",
+        "\n",
+        "print(\"Katalog Lengkap:\", katalog_lengkap)\n",
+        "print(\"Produk Promo Aktif:\", produk_promo_aktif)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "epEH-Mvapi8s",
+        "outputId": "00fd7b1f-bfc3-4f95-a5c2-c6e21b14260c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Katalog Lengkap: {'Mouse', 'Scanner', 'Printer', 'Monitor', 'Keyboard', 'Laptop'}\n",
+            "Produk Promo Aktif: {'Mouse', 'Printer'}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
