@@ -1,0 +1,140 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMbom1zdBLoGvx3JPCtg0+5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/syawaludin0215/PEMEROGRAMAN-DASAR/blob/main/Pertemuan%203%20Praktikum\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ooi_v6pytxXI",
+        "outputId": "44870481-5aa2-4132-e959-c232956f6608"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan tahun: 2024\n",
+            "2024 adalah tahun kabisat\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Fungsi untuk menentukan apakah tahun kabisat\n",
+        "def cek_kabisat(tahun):\n",
+        "    if (tahun % 4 == 0 and tahun % 100 != 0) or (tahun % 400 == 0):\n",
+        "        return True\n",
+        "    else:\n",
+        "        return False\n",
+        "\n",
+        "# Fungsi input\n",
+        "tahun = int(input(\"Masukkan tahun: \"))\n",
+        "\n",
+        "# Operasi aritmatika + logika dilakukan dalam fungsi cek_kabisat\n",
+        "\n",
+        "# Fungsi output\n",
+        "if cek_kabisat(tahun):\n",
+        "    print(tahun, \"adalah tahun kabisat\")\n",
+        "else:\n",
+        "    print(tahun, \"bukan tahun kabisat\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Program Kasir Sederhana\n",
+        "\n",
+        "# Input harga item yang dibeli\n",
+        "item1 = int(input(\"Masukkan harga item 1: \"))\n",
+        "item2 = int(input(\"Masukkan harga item 2: \"))\n",
+        "item3 = int(input(\"Masukkan harga item 3: \"))\n",
+        "\n",
+        "# Input status member\n",
+        "member = input(\"Apakah pelanggan member? (ya/tidak): \").lower()\n",
+        "\n",
+        "# 1. Hitung Subtotal\n",
+        "subtotal = item1 + item2 + item3\n",
+        "\n",
+        "# 2. Evaluasi syarat diskon (member dan subtotal > 100000)\n",
+        "berhak_diskon = (member == \"ya\") and (subtotal > 100000)\n",
+        "\n",
+        "# 3. Hitung jumlah diskon\n",
+        "if berhak_diskon:\n",
+        "    diskon = 0.15 * subtotal   # diskon 15%\n",
+        "else:\n",
+        "    diskon = 0\n",
+        "\n",
+        "# 4. Hitung harga setelah diskon\n",
+        "harga_setelah_diskon = subtotal - diskon\n",
+        "\n",
+        "# 5. Hitung PPN (11% dari harga setelah diskon)\n",
+        "ppn = 0.11 * harga_setelah_diskon\n",
+        "\n",
+        "# 6. Hitung total akhir\n",
+        "total_akhir = harga_setelah_diskon + ppn\n",
+        "\n",
+        "# Output\n",
+        "print(\"\\n=== STRUK PEMBELIAN ===\")\n",
+        "print(f\"Subtotal              : Rp{subtotal}\")\n",
+        "print(f\"Diskon                : Rp{diskon}\")\n",
+        "print(f\"Harga setelah diskon  : Rp{harga_setelah_diskon}\")\n",
+        "print(f\"PPN (11%)             : Rp{ppn}\")\n",
+        "print(f\"Total yang harus dibayar: Rp{total_akhir}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dz9aHrAa1wPQ",
+        "outputId": "e25ac373-d639-4be0-c794-953dcf79bfff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan harga item 1: 150000\n",
+            "Masukkan harga item 2: 100000\n",
+            "Masukkan harga item 3: 300000\n",
+            "Apakah pelanggan member? (ya/tidak): ya\n",
+            "\n",
+            "=== STRUK PEMBELIAN ===\n",
+            "Subtotal              : Rp550000\n",
+            "Diskon                : Rp82500.0\n",
+            "Harga setelah diskon  : Rp467500.0\n",
+            "PPN (11%)             : Rp51425.0\n",
+            "Total yang harus dibayar: Rp518925.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
