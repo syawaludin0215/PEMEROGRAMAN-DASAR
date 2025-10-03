@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMotISBv4oAdKUhjSnbv+Iu",
+      "authorship_tag": "ABX9TyOlNk5dXJ/UikmmIGXW9Hff",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,7 +28,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 1,
+      "execution_count": null,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
@@ -72,7 +72,7 @@
         "id": "_jXiwM8R-M5i",
         "outputId": "863d080f-7044-4881-b8ef-6a4c513537c3"
       },
-      "execution_count": 5,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -113,7 +113,7 @@
         "id": "u8wPHvFh-P1X",
         "outputId": "f98e6a72-b24e-4bfd-b297-1ccfd1693554"
       },
-      "execution_count": 7,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -145,7 +145,7 @@
         "id": "X3GuoHUI-RnJ",
         "outputId": "918905b8-30e8-4c7f-e4e4-288f0660fc90"
       },
-      "execution_count": 8,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -172,7 +172,7 @@
         "id": "afgxsg7p_euR",
         "outputId": "1cf2ce2d-0a3d-4627-8ae9-f922ade9d683"
       },
-      "execution_count": 9,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -201,7 +201,7 @@
         "id": "KBpxllUq_mZv",
         "outputId": "fec6dbf8-b02a-4a41-939b-71e2a5db14d8"
       },
-      "execution_count": 12,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -216,7 +216,7 @@
     {
       "cell_type": "code",
       "source": [
-        "total_belanja =  # asumsikan total belanja di atas 20rb\n",
+        "total_belanja = int(input(\"total_belanja: \"))  # asumsikan total belanja di atas 20rb\n",
         "\n",
         "if total_belanja > 200000:\n",
         "    diskon = total_belanja * 0.10\n",
@@ -228,20 +228,19 @@
       ],
       "metadata": {
         "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 106
+          "base_uri": "https://localhost:8080/"
         },
         "id": "lQqi81QR_onP",
-        "outputId": "b0089089-f83d-4795-e3ef-2764463655da"
+        "outputId": "aa56a651-11e6-4cc6-aad6-fc76ccf6a111"
       },
-      "execution_count": 13,
+      "execution_count": 26,
       "outputs": [
         {
-          "output_type": "error",
-          "ename": "SyntaxError",
-          "evalue": "invalid syntax (ipython-input-3936376628.py, line 1)",
-          "traceback": [
-            "\u001b[0;36m  File \u001b[0;32m\"/tmp/ipython-input-3936376628.py\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    total_belanja =  # asumsikan total belanja di atas 20rb\u001b[0m\n\u001b[0m                     ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "total_belanja: 500000\n",
+            "Anda mendapat diskon! Total bayar: Rp 450000.0\n"
           ]
         }
       ]
@@ -266,7 +265,7 @@
         "id": "6Uls89eO_vE_",
         "outputId": "e7f136d7-2180-4de5-ce37-1c7e9b40f545"
       },
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -300,7 +299,7 @@
         "id": "OsVhBjUe_xJP",
         "outputId": "da9adeba-6341-4086-c0c9-6e0e04869b74"
       },
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -336,7 +335,7 @@
         "id": "wyMumpVP_zTf",
         "outputId": "30e5eab1-33ac-41b5-8eff-0ac2f661192a"
       },
-      "execution_count": 16,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
