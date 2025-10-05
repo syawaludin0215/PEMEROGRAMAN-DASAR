@@ -1,0 +1,329 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNL7SygLF3IXd67He9XsGjG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/syawaludin0215/PEMEROGRAMAN-DASAR/blob/main/Pertemuan%204%20Tugas%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "soqGbpi1C4Nu",
+        "outputId": "a44862a8-35c5-4cc8-9262-b49579359b3b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan sebuah angka: 125\n",
+            "Kelipatan 5\n"
+          ]
+        }
+      ],
+      "source": [
+        "angka = int(input(\"Masukkan sebuah angka: \"))\n",
+        "\n",
+        "if angka % 5 == 0:\n",
+        "    print(\"Kelipatan 5\")\n",
+        "else:\n",
+        "    print(\"Bukan kelipatan 5\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tahun = int(input(\"Masukkan tahun: \"))\n",
+        "\n",
+        "if tahun % 400 == 0:\n",
+        "    print(\"Tahun Kabisat\")\n",
+        "elif tahun % 100 == 0:\n",
+        "    print(\"Bukan Tahun Kabisat\")\n",
+        "elif tahun % 4 == 0:\n",
+        "    print(\"Tahun Kabisat\")\n",
+        "else:\n",
+        "    print(\"Bukan Tahun Kabisat\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZuXhU5eaE96I",
+        "outputId": "7fd75115-524f-406b-edee-602029e9509c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan tahun: 2004\n",
+            "Tahun Kabisat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Masukkan angka pertama: \"))\n",
+        "b = int(input(\"Masukkan angka kedua: \"))\n",
+        "hasil = a + b\n",
+        "\n",
+        "print(f\"Hasil penjumlahan = {hasil}\")\n",
+        "\n",
+        "if hasil % 2 == 0:\n",
+        "    print(\"Hasil adalah bilangan genap\")\n",
+        "else:\n",
+        "    print(\"Hasil adalah bilangan ganjil\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YvvdRU6CE-Yj",
+        "outputId": "ead1eff9-ab77-48b4-bfaa-777150a0f8df"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka pertama: 10\n",
+            "Masukkan angka kedua: 50\n",
+            "Hasil penjumlahan = 60\n",
+            "Hasil adalah bilangan genap\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bulan = int(input(\"Masukkan angka bulan (1-12): \"))\n",
+        "\n",
+        "if bulan == 1:\n",
+        "    print(\"Januari\")\n",
+        "elif bulan == 2:\n",
+        "    print(\"Februari\")\n",
+        "elif bulan == 3:\n",
+        "    print(\"Maret\")\n",
+        "elif bulan == 4:\n",
+        "    print(\"April\")\n",
+        "elif bulan == 5:\n",
+        "    print(\"Mei\")\n",
+        "elif bulan == 6:\n",
+        "    print(\"Juni\")\n",
+        "elif bulan == 7:\n",
+        "    print(\"Juli\")\n",
+        "elif bulan == 8:\n",
+        "    print(\"Agustus\")\n",
+        "elif bulan == 9:\n",
+        "    print(\"September\")\n",
+        "elif bulan == 10:\n",
+        "    print(\"Oktober\")\n",
+        "elif bulan == 11:\n",
+        "    print(\"November\")\n",
+        "elif bulan == 12:\n",
+        "    print(\"Desember\")\n",
+        "else:\n",
+        "    print(\"Input salah\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qyV3fkRhFctO",
+        "outputId": "77f51e50-ab42-485f-d376-39e5a1c30393"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan angka bulan (1-12): 6\n",
+            "Juni\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "jam = int(input(\"Masukkan jam (0-23): \"))\n",
+        "\n",
+        "if 0 <= jam <= 11:\n",
+        "    print(\"Selamat Pagi\")\n",
+        "elif 12 <= jam <= 15:\n",
+        "    print(\"Selamat Siang\")\n",
+        "elif 16 <= jam <= 18:\n",
+        "    print(\"Selamat Sore\")\n",
+        "elif 19 <= jam <= 23:\n",
+        "    print(\"Selamat Malam\")\n",
+        "else:\n",
+        "    print(\"Input salah\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IZxLq0rYFfFd",
+        "outputId": "7b1353a1-d06b-4cac-e474-1a52a531c8d2"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan jam (0-23): 15\n",
+            "Selamat Siang\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"=\"*30)\n",
+        "print(\"SELAMAT DATANG DI KAFE GEMINI\")\n",
+        "print(\"=\"*30)\n",
+        "print(\"Menu Makanan & Minuman:\")\n",
+        "print(\"1. Kopi Hitam   - Rp 12.000\")\n",
+        "print(\"2. Teh Manis    - Rp  8.000\")\n",
+        "print(\"3. Roti Bakar   - Rp 15.000\")\n",
+        "print(\"4. Mie Instan   - Rp 10.000\")\n",
+        "print(\"=\"*30)\n",
+        "\n",
+        "pilihan_str: str = input(\"Silakan masukkan nomor pilihan Anda (1-4): \")\n",
+        "pilihan_int: int = int(pilihan_str)\n",
+        "nama_pesanan: str = \"\"\n",
+        "harga: int = 0\n",
+        "\n",
+        "# Pemilihan menu\n",
+        "if pilihan_int == 1:\n",
+        "    nama_pesanan = \"Kopi Hitam\"\n",
+        "    harga = 12000\n",
+        "elif pilihan_int == 2:\n",
+        "    nama_pesanan = \"Teh Manis\"\n",
+        "    harga = 8000\n",
+        "elif pilihan_int == 3:\n",
+        "    nama_pesanan = \"Roti Bakar\"\n",
+        "    harga = 15000\n",
+        "elif pilihan_int == 4:\n",
+        "    nama_pesanan = \"Mie Instan\"\n",
+        "    harga = 10000\n",
+        "else:\n",
+        "    print(\"Maaf, pilihan menu tidak valid. Silakan jalankan ulang program.\")\n",
+        "    exit()\n",
+        "\n",
+        "print(f\"Anda memesan: {nama_pesanan} dengan harga Rp {harga}\")\n",
+        "\n",
+        "# Terapkan diskon berdasarkan harga\n",
+        "diskon = 0\n",
+        "if harga >= 15000:\n",
+        "    diskon = 0.70   # diskon 70%\n",
+        "elif harga >= 10000:\n",
+        "    diskon = 0.50   # diskon 50%\n",
+        "else:\n",
+        "    diskon = 0.30   # diskon 30%\n",
+        "\n",
+        "potongan = int(harga * diskon)\n",
+        "total_bayar = harga - potongan\n",
+        "\n",
+        "print(f\"Diskon {int(diskon*100)}% diterapkan. Total bayar: Rp {total_bayar}\")\n",
+        "\n",
+        "# Proses pembayaran\n",
+        "print(\"=\"*30)\n",
+        "uang_dibayar_str: str = input(f\"Total yang harus dibayar: Rp {total_bayar}. Masukkan jumlah uang Anda: Rp \")\n",
+        "uang_dibayar: int = int(uang_dibayar_str)\n",
+        "\n",
+        "if uang_dibayar >= total_bayar:\n",
+        "    kembalian = uang_dibayar - total_bayar\n",
+        "    print(\"=\"*30, \"\\n=== Struk Pembayaran ===\")\n",
+        "    print(f\"Pesanan Anda   : {nama_pesanan}\")\n",
+        "    print(f\"Total Harga    : Rp {harga}\")\n",
+        "    print(f\"Diskon         : Rp {potongan}\")\n",
+        "    print(f\"Total Bayar    : Rp {total_bayar}\")\n",
+        "    print(f\"Uang Dibayar   : Rp {uang_dibayar}\")\n",
+        "    print(f\"Kembalian      : Rp {kembalian}\")\n",
+        "    print(\"=\"*30)\n",
+        "    print(\"Terima kasih telah berbelanja!\")\n",
+        "else:\n",
+        "    kekurangan = total_bayar - uang_dibayar\n",
+        "    print(f\"Maaf, uang Anda kurang sebesar Rp {kekurangan}\")\n",
+        "\n",
+        "print(\"=\"*30)\n"
+      ],
+      "metadata": {
+        "id": "MvsPqIOlIjD7",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "8d095f4e-d209-47e5-b42a-866292fbf071"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "==============================\n",
+            "SELAMAT DATANG DI KAFE GEMINI\n",
+            "==============================\n",
+            "Menu Makanan & Minuman:\n",
+            "1. Kopi Hitam   - Rp 12.000\n",
+            "2. Teh Manis    - Rp  8.000\n",
+            "3. Roti Bakar   - Rp 15.000\n",
+            "4. Mie Instan   - Rp 10.000\n",
+            "==============================\n",
+            "Silakan masukkan nomor pilihan Anda (1-4): 4\n",
+            "Anda memesan: Mie Instan dengan harga Rp 10000\n",
+            "Diskon 50% diterapkan. Total bayar: Rp 5000\n",
+            "==============================\n",
+            "Total yang harus dibayar: Rp 5000. Masukkan jumlah uang Anda: Rp 50000\n",
+            "============================== \n",
+            "=== Struk Pembayaran ===\n",
+            "Pesanan Anda   : Mie Instan\n",
+            "Total Harga    : Rp 10000\n",
+            "Diskon         : Rp 5000\n",
+            "Total Bayar    : Rp 5000\n",
+            "Uang Dibayar   : Rp 50000\n",
+            "Kembalian      : Rp 45000\n",
+            "==============================\n",
+            "Terima kasih telah berbelanja!\n",
+            "==============================\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
