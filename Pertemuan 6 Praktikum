@@ -1,0 +1,376 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMIQW/YkoAK3QVV8Tk5Y15o",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/syawaludin0215/PEMEROGRAMAN-DASAR/blob/main/Pertemuan%206%20Praktikum\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7fitINvfBwz3",
+        "outputId": "b9779e1f-dddd-45a6-ba45-4320fd0f549d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sistem siap. Selamat datang kembali di sesi praktikum.\n"
+          ]
+        }
+      ],
+      "source": [
+        "# SOAL 1: Fungsi Inisialisasi Sederhana\n",
+        "def sapa_praktikan():\n",
+        "    \"\"\"Mencetak pesan sambutan dasar.\"\"\"\n",
+        "    print(\"Sistem siap. Selamat datang kembali di sesi praktikum.\")\n",
+        "\n",
+        "# Pemanggilan:\n",
+        "sapa_praktikan()\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def Biodata():\n",
+        "    \"\"\"Menampilkan biodata singkat.\"\"\"\n",
+        "    print(\"=== BIODATA ===\")\n",
+        "    print(\"Nama       : M. Syawal\")\n",
+        "    print(\"NIM        : 4232411025\")\n",
+        "    print(\"Prodi      : Teknik rekayasa pembangkit energi\")\n",
+        "    print(\"Kelas      : A\")\n",
+        "    print(\"Universitas: politeknik negeri batam\")\n",
+        "\n",
+        "# Pemanggilan fungsi\n",
+        "Biodata()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZElfhnZQIif_",
+        "outputId": "95a00ca5-ff48-4ad3-fe86-53b72c35cebe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=== BIODATA ===\n",
+            "Nama       : M. Syawal\n",
+            "NIM        : 4232411025\n",
+            "Prodi      : Teknik rekayasa pembangkit energi\n",
+            "Kelas      : A\n",
+            "Universitas: politeknik negeri batam\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def hitung_volume_kubus(sisi):\n",
+        "    \"\"\"Menghitung volume kubus dari panjang sisinya.\"\"\"\n",
+        "    return sisi ** 3\n",
+        "\n",
+        "panjang_sisi = 5\n",
+        "print(f\"Volume kubus dengan sisi {panjang_sisi} adalah: {hitung_volume_kubus(panjang_sisi)}\")\n"
+      ],
+      "metadata": {
+        "id": "45A0xH6-P1HX",
+        "outputId": "cab197e1-bab0-4191-e43d-87792387e9d3",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Volume kubus dengan sisi 5 adalah: 125\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def hitung_volume_balok(panjang, lebar, tinggi):\n",
+        "    \"\"\"Menghitung volume balok berdasarkan panjang, lebar, dan tinggi.\"\"\"\n",
+        "    return panjang * lebar * tinggi\n",
+        "\n",
+        "p = 6\n",
+        "l = 4\n",
+        "t = 3\n",
+        "print(f\"Volume balok dengan ukuran {p} x {l} x {t} adalah: {hitung_volume_balok(p, l, t)}\")\n"
+      ],
+      "metadata": {
+        "id": "p5LSDsjxP4wu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d3e65f33-8952-444e-de59-1d3bd9f85e82"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Volume balok dengan ukuran 6 x 4 x 3 adalah: 72\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SOAL 3: Menghitung Rata-rata dari List Nilai\n",
+        "def hitung_rata_rata(data_nilai):\n",
+        "    \"\"\"Menghitung rata-rata dari list angka menggunakan perulangan for.\"\"\"\n",
+        "    total = 0\n",
+        "\n",
+        "    # Perulangan untuk menjumlahkan nilai\n",
+        "    for nilai in data_nilai:\n",
+        "        total += nilai\n",
+        "\n",
+        "    # Pembagian untuk rata-rata\n",
+        "    if len(data_nilai) > 0:\n",
+        "        return total / len(data_nilai)\n",
+        "    return 0\n",
+        "\n",
+        "# Pemanggilan:\n",
+        "nilai_praktikan = [85, 78, 92, 65, 90]\n",
+        "print(f\"Nilai rata-rata kelas adalah: {hitung_rata_rata(nilai_praktikan)}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2gkJ9Kcq3WuK",
+        "outputId": "f4bdbfeb-be8c-4931-dd5f-b2ab304b0a93"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nilai rata-rata kelas adalah: 82.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# MODIFIKASI: Tambahkan pengecekan nilai valid (0–100)\n",
+        "def hitung_rata_rata(data_nilai):\n",
+        "    \"\"\"Menghitung rata-rata dari list angka dengan pengecekan nilai valid.\"\"\"\n",
+        "    total = 0\n",
+        "    jumlah_valid = 0\n",
+        "\n",
+        "    for nilai in data_nilai:\n",
+        "        # Mengecek apakah nilai berada dalam rentang 0 sampai 100\n",
+        "        if 0 <= nilai <= 100:\n",
+        "            total += nilai\n",
+        "            jumlah_valid += 1\n",
+        "        else:\n",
+        "            print(f\"Nilai {nilai} diabaikan karena tidak valid.\")\n",
+        "\n",
+        "    if jumlah_valid > 0:\n",
+        "        return total / jumlah_valid\n",
+        "    return 0\n",
+        "\n",
+        "# Pemanggilan:\n",
+        "nilai_praktikan = [85, 120, 92, -5, 90]\n",
+        "print(f\"Nilai rata-rata kelas adalah: {hitung_rata_rata(nilai_praktikan)}\")\n"
+      ],
+      "metadata": {
+        "id": "evvyzeqE5GKK",
+        "outputId": "b0b89416-73f9-47be-d126-766317321a3b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nilai 120 diabaikan karena tidak valid.\n",
+            "Nilai -5 diabaikan karena tidak valid.\n",
+            "Nilai rata-rata kelas adalah: 89.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SOAL 4: Sistem Penentuan Predikat Nilai\n",
+        "def tentukan_predikat(skor):\n",
+        "    \"\"\"Menentukan predikat (A, B, C, D, E) berdasarkan skor.\"\"\"\n",
+        "\n",
+        "    # Pengecekan tipe data agar hanya menerima input numerik\n",
+        "    if not isinstance(skor, (int, float)):\n",
+        "        return \"Input harus berupa angka!\"\n",
+        "\n",
+        "    # Percabangan penentuan predikat\n",
+        "    if skor >= 85:\n",
+        "        return \"A\"\n",
+        "    elif skor >= 70:\n",
+        "        return \"B\"\n",
+        "    elif skor >= 60:\n",
+        "        return \"C\"\n",
+        "    elif skor >= 50:\n",
+        "        return \"D\"\n",
+        "    else:\n",
+        "        return \"E\"\n",
+        "\n",
+        "# Pemanggilan fungsi\n",
+        "print(f\"Skor 75 mendapat predikat: {tentukan_predikat(75)}\")\n",
+        "print(f\"Skor 48 mendapat predikat: {tentukan_predikat(48)}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JFs74j_3-sCb",
+        "outputId": "51368005-3c4b-49f8-f8db-cfdf751e88da"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Skor 75 mendapat predikat: B\n",
+            "Skor 48 mendapat predikat: E\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SOAL 5: Menghitung Faktorial dengan Loop While\n",
+        "def hitung_faktorial(n):\n",
+        "    \"\"\"Menghitung faktorial dari bilangan positif n.\"\"\"\n",
+        "\n",
+        "    # Percabangan untuk menangani kasus khusus\n",
+        "    if n < 0:\n",
+        "        return \"Faktorial tidak terdefinisi untuk bilangan negatif\"\n",
+        "    elif n == 0:\n",
+        "        return 1\n",
+        "\n",
+        "    hasil = 1\n",
+        "\n",
+        "    # Perulangan berjalan selama n lebih besar dari 1\n",
+        "    while n > 1:\n",
+        "        hasil *= n\n",
+        "        n -= 1  # Kurangi n setiap iterasi\n",
+        "\n",
+        "    return hasil\n",
+        "\n",
+        "# Pemanggilan:\n",
+        "bilangan_n = 4\n",
+        "print(f\"Faktorial dari {bilangan_n} adalah: {hitung_faktorial(bilangan_n)}\")\n",
+        "# Output: 24\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GgCeThQYAcTC",
+        "outputId": "bfca46ba-047e-49f9-ef44-30a1029bb93c"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Faktorial dari 4 adalah: 24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SOAL 6: Analisis Data Suhu Ekstrem (for dan if/elif)\n",
+        "def analisis_suhu(data_suhu, batas_panas=35, batas_dingin=15):\n",
+        "    \"\"\"Menghitung jumlah hari Panas dan Dingin dari data_suhu.\"\"\"\n",
+        "\n",
+        "    panas_count = 0\n",
+        "    dingin_count = 0\n",
+        "\n",
+        "    for suhu in data_suhu:\n",
+        "        if suhu >= batas_panas:\n",
+        "            panas_count += 1\n",
+        "        elif suhu <= batas_dingin:\n",
+        "            dingin_count += 1\n",
+        "\n",
+        "    return panas_count, dingin_count\n",
+        "\n",
+        "\n",
+        "# Pemanggilan:\n",
+        "suhu_mingguan = [36, 30, 14, 25, 38, 16, 28]\n",
+        "jumlah_panas, jumlah_dingin = analisis_suhu(suhu_mingguan)\n",
+        "\n",
+        "print(f\"Jumlah hari Panas (≥{35}°C): {jumlah_panas}\")\n",
+        "print(f\"Jumlah hari Dingin (≤{15}°C): {jumlah_dingin}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z35TcvD8CTBK",
+        "outputId": "cb4265f8-661d-4c88-8111-9a387cb0b21c"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Jumlah hari Panas (≥35°C): 2\n",
+            "Jumlah hari Dingin (≤15°C): 1\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
